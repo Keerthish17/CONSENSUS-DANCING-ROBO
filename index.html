@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .face {
+
+            margin-left: 40%;
+            background-color: green;
+            border: 2px solid;
+            border-top-left-radius: 350px;
+            border-top-right-radius: 350px;
+
+            width: 300px;
+            height: 200px;
+            display: flex;
+            border-color: green;
+            border-bottom: 0px;
+            margin-top: 100px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+
+        .eye1 {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-color: white;
+            margin: 0px 14px;
+            border-radius: 50%;
+            margin-top: 100px;
+            margin-left: -120px;
+            padding: 3px;
+        }
+
+        .eye2 {
+            margin-right: -130px;
+            margin-top: 100px;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background-color: white;
+            padding: 3px;
+            border-radius: 100%;
+
+        }
+
+        .eyeb1 {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            display: block;
+            background-color: black;
+            margin: 0px 14px;
+            border-radius: 100%;
+            margin-top: 5px;
+            margin-left: -.4px;
+            padding: 3px;
+        }
+
+        .eyeb2 {
+            position: relative;
+            width: 10px;
+            height: 10px;
+            display: block;
+            background-color: black;
+            margin: 0px 14px;
+            border-radius: 100%;
+            margin-top: 5px;
+            margin-left: -.4px;
+            padding: 3px;
+        }
+
+        .body1 {
+
+            margin-left: 40%;
+            background-color: green;
+            border: 2px solid;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            border-color: green;
+            border-radius: 5%;
+            margin-top: 7px;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+
+        }
+
+        .hand1 {
+            position: absolute;
+            width: 50px;
+            height: 230px;
+            background-color: green;
+            display: flex;
+            margin-top: -290px;
+            border-radius: 200px;
+            margin-left: 36.55%;
+
+
+        }
+
+        .hand2 {
+            position: absolute;
+            width: 50px;
+            height: 230px;
+            background-color: green;
+            display: flex;
+            margin-top: -290px;
+            border-radius: 200px;
+            margin-left: 57.75%;
+
+
+        }
+
+        .leg1 {
+            position: absolute;
+            width: 50px;
+            height: 150px;
+            background-color: green;
+            display: flex;
+            margin-top: -21px;
+            border-radius: 200px;
+            margin-left: 42%;
+
+
+        }
+
+        .leg2 {
+            position: absolute;
+            width: 50px;
+            height: 150px;
+            background-color: green;
+            display: flex;
+            margin-top: -21px;
+            border-radius: 200px;
+            margin-left: 52.590%;
+
+
+        }
+
+        .horn1 {
+            position: absolute;
+            width: 5px;
+            height: 100px;
+            rotate: -10deg;
+            background-color: green;
+            display: flex;
+            margin-top: 0px;
+            border-radius: 200px;
+            margin-left: 42.5%;
+        }
+
+        .horn2 {
+            position: absolute;
+            width: 5px;
+            height: 100px;
+            rotate: 10deg;
+            background-color: green;
+            display: flex;
+            margin-top: 0px;
+            border-radius: 200px;
+            margin-left: 54%;
+        }
+
+        body {
+            position: relative;
+            background-color: rgb(34, 144, 208);
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .hr {
+            text-align: center;
+            font-size: 40px;
+            color: black;
+            margin-top: 200px;
+        }
+
+
+        body:hover {
+            .hand1 {
+
+                animation: movehand1 3s infinite;
+            }
+        }
+
+        @keyframes movehand1 {
+            from {
+                transform-origin: top;
+                rotate: 0deg;
+
+            }
+
+            50% {
+                rotate: 180deg;
+            }
+
+
+            to {
+                transform-origin: top;
+                rotate: -180 deg;
+            }
+        }
+
+        body:hover {
+            .hand2 {
+
+                animation: movehand2 3s infinite;
+
+            }
+        }
+
+        @keyframes movehand2 {
+            from {
+                transform-origin: top;
+                rotate: 0deg;
+
+            }
+
+            50% {
+                rotate: -180deg;
+            }
+
+
+            to {
+                transform-origin: top;
+                rotate: 180 deg;
+            }
+        }
+
+
+
+
+        body:hover {
+            .leg1 {
+                animation: movelegs1 3s infinite;
+            }
+        }
+
+        @keyframes movelegs1 {
+            from {
+                rotate: 20deg;
+            }
+
+            50% {
+                rotate: 40deg;
+            }
+
+            to {
+                rotate: 0deg;
+            }
+        }
+
+        body:hover {
+            .leg2 {
+                animation: movelegs 3s infinite;
+            }
+        }
+
+        @keyframes movelegs {
+            from {
+                rotate: -20deg;
+            }
+
+            50% {
+                rotate: -40deg;
+            }
+
+            to {
+                rotate: 0deg;
+            }
+        }
+
+        body:hover {
+            .body1 {
+                animation: movebody 3s infinite;
+            }
+        }
+
+        @keyframes movebody {
+            from {
+                rotate: -60deg;
+            }
+
+
+            to {
+                rotate: 0deg;
+
+            }
+        }
+
+        body:hover {
+            .face {
+                animation: moveface 3s infinite;
+
+            }
+
+            .eye1 {}
+        }
+
+        @keyframes moveface {
+            from {
+                rotate: 30deg;
+            }
+
+            to {
+                rotate: 0deg;
+            }
+        }
+
+        body:hover {
+            .eye1 {
+                animation: moveeye 3s infinite;
+
+            }
+
+            .eye2 {
+                animation: moveeye 3s infinite;
+
+            }
+
+        }
+
+        @keyframes moveeye {
+            from {
+                background-color: green;
+
+            }
+
+
+        }
+
+        body:hover {
+            .eyeb1 {
+                animation: moveeye 3s infinite;
+
+            }
+
+            .eyeb2 {
+                animation: moveeye 3s infinite;
+
+            }
+
+        }
+
+        @keyframes moveeye {
+            from {
+                margin-left: -1%;
+            }
+
+
+        }
+
+        body:hover {
+            .bg {
+                animation: movehorn 3s infinite;
+            }
+        }
+
+        @keyframes movehorn {
+            from {
+                margin-left: -10%;
+            }
+
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="bg">
+        <div class="horn1"></div>
+        <div class="horn2"></div>
+    </div>
+    <div class="face">
+        <div class="eye1">
+            <div class="eyeb1"></div>
+
+
+        </div>
+        <div class="eye2">
+            <div class="eyeb2"></div>
+            <div class="glass"></div>
+
+        </div>
+
+    </div>
+    <div class="bodyparts">
+        <div class="body1"></div>
+        <div class="hand1"></div>
+        <div class="hand2"></div>
+    </div>
+    <div class="legs">
+        <div class="leg1"></div>
+        <div class="leg2"></div>
+    </div>
+
+
+    <h1 class="hr">Dancing Robot</h1>
+</body>
+
+</html>
